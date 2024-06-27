@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="Facebook Home-page">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title>Facebook</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -21,33 +24,35 @@
         </div>
         <div class="nav-external-link">
             <div class="div active">
-                <i class='bx bx-home-alt' style='color:#000000' ></i>
+                <a href="#"><i class='bx bx-home-alt' style='color:#000000' ></i></a>
             </div>
             <div class="div">
-                <i class='bx bxs-slideshow'></i>
+                <a href="#"><i class='bx bxs-slideshow'></i></a>
             </div>
             <div class="div">
-                <i class='bx bx-store-alt'></i>
+                <a href="#"><i class='bx bx-store-alt'></i></a>
             </div>
             <div class="div">
-                <i class='bx bxs-group' style='color:#000000' ></i>
+                <a href="#"><i class='bx bxs-group' style='color:#000000' ></i></a>
             </div>
             <div class="div">
-                <i class='bx bxs-game' style='color:#000000' ></i>
+                <a href="#"><i class='bx bxs-game' style='color:#000000' ></i></a>
+                <a href="#"><i class='bx bx-menu' undefined ></i></a>
             </div>
         </div>
         <div class="nav-message-apks-notifs-profile">
             <div class="man">
-                <i class='bx bx-dialpad-alt'></i>
+                <i style="cursor: pointer;" class='bx bx-dialpad-alt'></i>
+                <i class='bx bxs-plus-circle' style='color:#000000 '></i>
             </div>
             <div class="man">
-                <i class='bx bxl-messenger' style='color:#000000' ></i>
+                <i style="cursor: pointer;" class='bx bxl-messenger' style='color:#000000' ></i>
             </div>
             <div class="man">
-                <i class='bx bxs-bell'></i>
+                <i style="cursor: pointer;" class='bx bxs-bell'></i>
             </div>  
             <div class="profile">
-                <img class="myprofile" src="img/pic-persone/myprofile.jpg" alt="myprofile">
+                <img style="cursor: pointer;" class="myprofile" src="img/pic-persone/myprofile.jpg" alt="myprofile">
             </div>
         </div>
     </nav>
@@ -168,18 +173,22 @@
                 </div>
             </div>
             <div class="first-publication">
-                    <div class="first-publication-head">
+                <div class="first-publication-head">
                         <div class="user-profil">
-                            <img src="McK.jpg" alt="User profile picture">
-                            <p class="user-name">Mc Kingzo Jacob</p>
-                            <p class="post-date">Yesterday at 9:53 AM. </p>
+                            <img style="width: 40px; height: auto; border: 4px solid rgb(67, 110, 253);" class="myprofile" src="img/pic-persone/myprofile.jpg" alt="User profile picture">
+                            <div class="pub-infos">
+                                <p class="user-post-name">Mc Kingzo Jacob</p>
+                                <p class="post-date">Yesterday at 9:53 AM. </p>    
+                            </div>
                         </div>
                         <div class="post-nav">
                             <i class='bx bx-dots-horizontal-rounded'></i>
                             <i class='bx bx-x'></i>
                         </div>
-                    </div>
-                 <img src="publication.jpg" alt="A Facebook Post">
+                </div>
+                 <div style="width: 100%;" class="the-post">
+                    <img style="width: 615px; height: 100%;" src="img/pic-persone/lana.jpeg" alt="A Facebook Post">
+                 </div>
                  <div class="first-publication-footer">
                     <div class="reaction-stats">
                         <div class="reactions-saved">
@@ -211,67 +220,36 @@
                         </div>
                     </div>
             </div>
-            <div class="second-publication">
-                <div class="first-publication-head">
-                    <div class="user-profil">
-                        <img src="McK.jpg" alt="User profile picture">
-                        <div class="content1-NULL"></div>
-                        <div class="content2-NULL"></div>
-                    </div>
-                    <div class="post-content">
-    
-                    </div>
-                    <div class="post-nav">
-                        <div class="nav-el1"></div>
-                        <div class="nav-el2"></div>
-                        <div class="nav-el3"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="third-publication">
-                <div class="third-publication-head">
-                    <div class="user-profil">
-                        <img src="McK.jpg" alt="User profile picture">
-                        <div class="content1-NULL"></div>
-                        <div class="content2-NULL"></div>
-                    </div>
-                    <div class="post-content">
-    
-                    </div>
-                    <div class="post-nav">
-                        <div class="nav-el1"></div>
-                        <div class="nav-el2"></div>
-                        <div class="nav-el3"></div>
-                    </div>
-                </div>
-            </div>
-        </div>    
         </main>
         <div class="col3">
             <div class="ads-show">
                     <h4 class="col3-sponsored">Sponsored</h4>
                 <div class="ad-display">
-                    <img src="ads.jpg" alt="An ad image">
-                    <p class="ads-description">
+                    <img src="img/assets/ads_img/_169da58f-cfdf-41c4-9964-67903d1d4fdd.jpeg" alt="An ad image">
+                    <div class="references-ads">
+                        <p class="ads-description">
                         Convert Video to Text with AI
                         <span class="little-description">cockatoo.com</span>
-                    </p>
+                        </p>
+                    </div>
                 </div>
                 <div class="ad-display">
-                    <img src="ad2.jpg" alt="An ad image">
-                    <p class="ads-description">
-                        Convert Video to Text with AI
-                        <span class="little-description">cockatoo.com</span>
-                    </p>
+                    <img src="img/assets/ads_img/camerapicads.jpeg" alt="An ad image">
+                    <div class="references-ads">
+                        <p class="ads-description">
+                        Serato Sample 2.0
+                        <span class="little-description">serato.com</span>
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="switch-to-page">
                 <div class="nav-page-switch">
-                    <h4 class="col3-Pages-brand">Your Pages and profiles</h4>
+                    <h3 class="col3-Pages-brand">Your Pages and profiles</h3>
                     <i class='bx bx-dots-horizontal-rounded'></i>
                 </div>
                 <div class="last-seen-page-yours">
-                    <img src="your-paage-profile.jpg" alt="Your Page profile">
+                    <img class="myprofile" src="img/pic-persone/page3.jpg" alt="Your Page profile">
                     <p class="your-page-Name">Thérance</p>
                 </div>
                 <div class="switch-to-page-options">
@@ -280,7 +258,7 @@
                             <i class='bx bxs-user-plus'></i>
                             <p class="user-plus-desc">Switch to Page</p>
                         </div>
-                        <div class="create-promotion">
+                        <div class="switch">
                             <i class='bx bxs-paper-plane'></i>
                             <p class="promote-desc">Create promotion</p>
                         </div>
@@ -294,7 +272,7 @@
                 </div>
                 <div class="last-friend-request-pending">
                     <div class="image-friend-request">
-                        <img src="friend-request-photo" alt="A friend request photo">
+                        <img class="myprofile" src="img/pic-persone/lana.jpeg" alt="A friend request photo">
                     </div>
                     <div class="options-friends-request">
                         <div class="name-date-request">
@@ -302,7 +280,7 @@
                             <p class="date-request">3d</p>
                         </div>
                         <div class="mutual-friends">
-                            <img src="amutual-friend" alt="mutual-friend-with-this-person">
+                            <img style="width: 20px; border-radius: 50%;" src="img/pic-persone/oso.jpg" alt="mutual-friend-with-this-person">
                             <p class="mutual-friends-number">1 mutual friend</p>
                         </div>
                         <div class="nav-btn-friends">

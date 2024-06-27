@@ -11,7 +11,7 @@ body{
 nav{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    border-bottom: 1px solid;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.531);
 }
 /*En fait, j'ai divisé la navbar en 3 grandes parties que je veux encore décomposée. 
 --------------------------------------------------------
@@ -61,7 +61,12 @@ vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
     display: flex;
     gap: 38px;
     justify-content: center;
+    color: #000;
 }
+.nav-external-link a{
+    color: #000;
+}
+
 .div{
     display: flex;
     align-items: center;
@@ -128,7 +133,7 @@ img.myprofile{
 }
 /* Ligne numéro 1 : Les navs pour aller vers des liens externes comme la nav*/
 .line1{
-    border-bottom: 1px solid;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.311);
 }
 
 .goto{
@@ -187,9 +192,9 @@ main.maincontent-col2{
     position: relative;
     grid-column: 4 / 10;
     display: grid;
-    gap: 30px;
+    gap: 25px;
     justify-content: center;
-    grid-template-rows: repeat(5, 1fr), 50px;
+    grid-template-rows: repeat(3, 1fr), 50px; /* Par contre si quelqu'un peut m'expliquer comment ça se fait que la syntax soit incorrecte et que ça règle mon problème*/
 }
 /* Commençons pas le boitier des stories*/
 .active-stories{
@@ -279,6 +284,7 @@ button.next-view{
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
     height: 125px;
     background-color: #8989891e ;
@@ -289,7 +295,7 @@ button.next-view{
     width: 90%;
     gap: 5Px;
     padding-bottom: 4px;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.311);
 }
 .new-post-write input{
     border: none;
@@ -332,20 +338,309 @@ button.next-view{
 /* À présent designons le fil d'actualité */
 .first-publication{
     grid-row: 3 / 4;
+    display: flex;
+    flex-direction: column;
+    background-color: #3636362d;
+    border-radius: 10px;
 }
 
+.first-publication-head{
+    /*border: 1px solid;*/
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.user-profil{
+    /*border: 1px solid;*/
+    width: 40%;
+    display: flex;
+    gap: 5px;
+}
+.pub-infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.pub-infos p{ 
+    margin: 0;
 
+}
+.user-post-name{
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.post-date{
+    font-size: 12px;
+}
 
+.first-publication-head .post-nav{
+    display: flex;
+    align-items: center;
+    font-size: 29px;
+}
 
+.first-publication-head .post-nav i{
+    cursor: pointer;
+}
 
+.first-publication-footer{
+   /* border: 1px solid;*/
+    display: flex;
+    flex-direction: column;
+}
 
+.first-publication-footer .reaction-stats{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 30px 0px 30px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.311);
+}
+.first-publication-footer .reaction-stats p{
+    margin: 10px 0;
+}
 
+.first-publication-footer .reaction-stats .reactions-saved{
+    display: flex;
+}
+.first-publication-footer .reaction-stats .section-com-share{
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+}
 
+.first-publication-footer .reaction-btns{
+    display: flex;
+    justify-content: space-around;
+}
 
+/* 
+        Maintenant que la première colonne et le main container est terminée
+        Faisons la finition Let's goooooooo!!!!
 
+        *_* *_* *_* *_* *_* *_* *_* *_* *_* *_* *_* *_* *_* 
 
-
+           hhbbbbbbbbbbbbbb=============================================
+           vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+*/
 
 .col3{
     grid-column: 10 / 13;
+    gap: 6px;
 }
+.col3  .ads-show h4{
+    margin: 10px 0;
+}
+.col3 .ads-show{
+    display: grid;
+    gap: 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.311);
+    padding-bottom: 15px;
+}
+
+.ad-display{
+    display: flex;
+    gap: 10px;
+}
+.ad-display img{
+    display: flex;
+    width: 150px; 
+    height: 110px; 
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.ad-display .references-ads p{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ad-display .references-ads p span{
+    font-size: 14px;
+}
+/*Section basculer vers la page 
+    Voilà le CSS sur un plateau
+*/ 
+.switch-to-page{
+    display: grid;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.311);
+    padding-bottom: 20px;
+}
+
+.switch-to-page h4{
+    margin: 10px 0;
+}
+.switch-to-page .nav-page-switch i.bx-dots-horizontal-rounded{
+    font-size: 24px;
+}
+.switch-to-page .nav-page-switch{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.switch-to-page .last-seen-page-yours{
+    display: flex;
+    gap: 7px;
+}
+.switch-to-page .last-seen-page-yours p{
+    font-size: 17px;
+    margin: 10px;
+    font-weight: 400;
+}
+.switch-to-page .switch-to-page-options .switch {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.switch-to-page .switch-to-page-options{
+    padding: 0 30px;
+}
+.switch-to-page .switch-to-page-options .switch p{
+    margin: 0;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.switch-to-page .switch-to-page-options .switch i{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+/* Passons à la dernière étape : 
+
+la section "Friends request" */
+
+.friends-request-pending{
+    display: grid;
+}
+
+.friends-request-pending .page-request-nav h3 {
+    margin: 10px 0;
+}
+
+.friends-request-pending .page-request-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.friends-request-pending .options-friends-request h4 {
+    margin: 0;
+} 
+
+.last-friend-request-pending{
+    display: flex;
+    gap: 10px;
+}
+
+.last-friend-request-pending .options-friends-request{
+    /*border: 1px solid;*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.last-friend-request-pending .options-friends-request .name-date-request p{
+    margin: 0;
+}
+.last-friend-request-pending .options-friends-request .name-date-request{
+    display: flex;
+    justify-content: space-between;
+}
+
+.last-friend-request-pending .options-friends-request .mutual-friends p{
+    margin: 0;
+}
+
+.last-friend-request-pending .options-friends-request .mutual-friends{
+    display: flex;
+}
+
+.last-friend-request-pending  .nav-btn-friends{
+    display: flex;
+    justify-content: space-between;
+}
+.last-friend-request-pending  .nav-btn-friends button{
+    width: 49%;
+    height: 45px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.last-friend-request-pending  .nav-btn-friends button.confirm-btn{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(8, 102, 255);
+}
+.last-friend-request-pending  .nav-btn-friends button.delete-btn{
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.413);
+}
+
+
+@media (max-width: 1318px) {
+    .nav-logo-search input{
+        width: 48px;
+        border-radius: 50%;
+    }
+    .nav-logo-search input::placeholder{
+        opacity: 0;
+    }
+    .nav-logo-search i.bx-search{
+        font-size: 35px;
+        top: 11px;
+        left: 8px;
+    }
+}
+@media (max-width: 1289px) {
+    .div-col1{
+        display: none;
+        grid-column: 1/2;
+    }
+    main.maincontent-col2{
+        grid-column: 2 / 10;
+    }
+    .nav-external-link i.bxs-game{
+        display: none;
+    }
+}
+@media (min-width: 1289px) {
+    .nav-external-link i.bx-menu{
+        display: none;
+    }
+}
+@media (max-width: 1075px) {
+    .col3{
+     display: none;
+     grid-column: 11 /13;
+    }
+    
+    main.maincontent-col2{
+     grid-column: 1 / 13;
+ }
+ }
+ @media (max-width: 971px) {
+    .nav-message-apks-notifs-profile i.bx-dialpad-alt{
+        display: none;
+    }
+ }
+ @media (min-width: 971px) {
+    .nav-message-apks-notifs-profile i.bxs-plus-circle{
+        display: none;
+    }
+ }
+
+ @media (max-width: 800px) {
+    .nav-external-link{
+        display: none;
+    }
+ }
+ @media (max-width: 622px) {
+    .main-body{
+        grid-auto-columns: 100px;
+    }
+ }
